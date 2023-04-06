@@ -2,8 +2,10 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+// Arrays used in user question validation
 const shapes = ['Circle', 'Triangle', 'Square'];
 const colors = ['black' ,'silver', 'gray', 'white', 'maroon', 'red', 'purple', 'fuchsia', 'green', 'lime', 'olive', 'yellow', 'navy', 'blue', 'teal', 'aqua', 'orange', 'pink']
+
 // User choices for creating logo
 const init = () => {inquirer.prompt([
 //Question to pick a logo shape
