@@ -63,7 +63,7 @@ const init = () => {inquirer.prompt([
     const { text, textColor, shape, color } = answers;
     let shapeObj;
     if (shape === "Circle") {
-      shapeObj = new Circle (color, textColor, text, radius);
+      shapeObj = new Circle (color, textColor, text);
     } else if (shape === "Triangle") {
       shapeObj = new Triangle(color, textColor, text);
     } else if (shape === "Square") {
@@ -71,7 +71,7 @@ const init = () => {inquirer.prompt([
     }
 
     const svg = shapeObj.render();
-    fs.writeFile('output.svg', svg, (err) => {
+    fs.writeFile('./lib/output.svg', svg, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
       });
