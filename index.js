@@ -1,7 +1,7 @@
 // requiring npm packages
 const inquirer = require('inquirer')
 const fs = require('fs')
-const { Circle, Square } = require('./lib/shapes');
+const { Circle, Square, Triangle } = require('./lib/shapes');
 
 // Arrays used in user question validation
 const shapes = ['Circle', 'Triangle', 'Square'];
