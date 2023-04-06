@@ -1,7 +1,7 @@
 // requiring npm packages
 const inquirer = require('inquirer')
 const fs = require('fs')
-const { Circle } = require('./lib/shapes');
+const { Circle, Square } = require('./lib/shapes');
 
 // Arrays used in user question validation
 const shapes = ['Circle', 'Triangle', 'Square'];
@@ -71,7 +71,7 @@ const init = () => {inquirer.prompt([
     }
 
     const svg = shapeObj.render();
-    fs.writeFile('./lib/output.svg', svg, (err) => {
+    fs.writeFile('./examples/output.svg', svg, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
       });
