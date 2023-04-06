@@ -1,6 +1,7 @@
 // requiring npm packages
 const inquirer = require('inquirer')
 const fs = require('fs')
+const { Circle } = require('./lib/shapes');
 
 // Arrays used in user question validation
 const shapes = ['Circle', 'Triangle', 'Square'];
@@ -56,7 +57,25 @@ const init = () => {inquirer.prompt([
         }
     }
 },
-]);
+])
+// Creating a new instance of user selected shape using their inputs as parameters
+.then((answers) => {
+    const { text, textColor, shape, color } = answers;
+    let shapeObj;
+    if (shape === "Circle") {
+      shapeObj = new Circle (color, textColor, text, radius);
+    } else if (shape === "Triangle") {
+      shapeObj = new Triangle(color, textColor, text);
+    } else if (shape === "Square") {
+      shapeObj = new Square(color, textColor, text);
+    }
+
+    const svg = shapeObj.render();
+    fs.writeFile('output.svg', svg, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      });
+  });
 }
 
 init()
