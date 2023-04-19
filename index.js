@@ -59,23 +59,27 @@ const init = () => {inquirer.prompt([
 },
 ])
 // Creating a new instance of user selected shape using their inputs as parameters
-.then((answers) => {
-    const { text, textColor, shape, color } = answers;
-    let shapeObj;
-    if (shape === "Circle") {
-      shapeObj = new Circle (color, textColor, text);
-    } else if (shape === "Triangle") {
-      shapeObj = new Triangle(color, textColor, text);
-    } else if (shape === "Square") {
-      shapeObj = new Square(color, textColor, text);
-    }
 
-    const svg = shapeObj.render();
-    fs.writeFile('./examples/output.svg', svg, (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-      });
-  });
+.then((answers) => {
+  const { text, textColor, shape, color } = answers;
+  let shapeObj;
+  if (shape === "Circle") {
+    shapeObj = new Circle (textColor, text);
+    shapeObj.setColor(color);
+  } else if (shape === "Triangle") {
+    shapeObj = new Triangle(textColor, text);
+    shapeObj.setColor(color);
+  } else if (shape === "Square") {
+    shapeObj = new Square(textColor, text);
+    shapeObj.setColor(color)
+  }
+
+  const svg = shapeObj.render();
+  fs.writeFile('./examples/output.svg', svg, (err) => {
+      if (err) throw err;
+      console.log('The file has been saved!');
+    });
+});
 }
 
 init()
