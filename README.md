@@ -34,7 +34,11 @@
 
 <img width="1450" alt="Screenshot 2023-05-03 at 2 49 06 PM" src="https://user-images.githubusercontent.com/104536533/236057836-82c7b510-052b-44f5-9505-05c4ac140001.png">
 
-## Github Repo
+  ## Video Walkthrough
+  
+  https://drive.google.com/file/d/128vqw1q_yXA3q3E9S9LoB5GzWlfNZ9F7/view
+
+  ## Github Repo
 
   https://github.com/joshsandquist/SVG-Logo-Maker
 
