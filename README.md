@@ -27,7 +27,16 @@
 
   ## Screenshots
 
+  <img width="1276" alt="Screenshot 2023-05-03 at 2 48 08 PM" src="https://user-images.githubusercontent.com/104536533/236057801-f77fb0f4-6a1e-4a60-9f53-0b30bef5d5ac.png">
   
+  
+<img width="1278" alt="Screenshot 2023-05-03 at 2 48 45 PM" src="https://user-images.githubusercontent.com/104536533/236057819-187af687-88fd-4ba7-a488-f0d2f312afdb.png">
+
+<img width="1450" alt="Screenshot 2023-05-03 at 2 49 06 PM" src="https://user-images.githubusercontent.com/104536533/236057836-82c7b510-052b-44f5-9505-05c4ac140001.png">
+
+## Github Repo
+
+  https://github.com/joshsandquist/SVG-Logo-Maker
 
   ## Questions
   If you have any questions or comments about this application, please feel free to contact on GitHub at https://github.com/joshsandquist.
